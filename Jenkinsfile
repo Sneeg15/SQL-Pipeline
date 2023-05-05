@@ -9,7 +9,7 @@ pipeline {
             }
         stage('Connect MariaDB'){
             steps{
-                sh 'sudo mariadb -u root -proot test_db'
+                sh 'mariadb -u root -proot test_db'
             }
         }
     }
