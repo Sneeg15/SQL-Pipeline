@@ -9,7 +9,7 @@ pipeline {
             }
         stage('Connect MariaDB'){
             steps{
-                sh 'mariadb -proot test_db'
+                sh 'mariadb -u jenkins -proot test_db'
             }
         }
     }
